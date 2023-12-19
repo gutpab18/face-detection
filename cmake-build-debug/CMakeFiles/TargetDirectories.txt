@@ -1,0 +1,3 @@
+/Users/gutpab18/CLionProjects/FaceTracking/cmake-build-debug/CMakeFiles/FaceTracking.dir
+/Users/gutpab18/CLionProjects/FaceTracking/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/gutpab18/CLionProjects/FaceTracking/cmake-build-debug/CMakeFiles/rebuild_cache.dir
