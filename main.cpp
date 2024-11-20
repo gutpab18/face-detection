@@ -18,9 +18,9 @@ private:
     CascadeClassifier eyesCascade;
     VideoCapture capture;
 
-    void detectFaces(Mat frame);
-    void displayFaces(Mat frame, const std::vector<Rect>& faces);
-    void displayEyes(Mat frame, const std::vector<Rect>& eyes, const Rect& face);
+    void detectFaces(const Mat& frame);
+    static void displayFaces(Mat frame, const std::vector<Rect>& faces);
+    static void displayEyes(Mat frame, const std::vector<Rect>& eyes, const Rect& face);
 };
 
 FaceDetector::FaceDetector(const String& faceCascadePath, const String& eyesCascadePath, int cameraDevice) {
@@ -62,7 +62,7 @@ void FaceDetector::run() {
     }
 }
 
-void FaceDetector::detectFaces(Mat frame) {
+void FaceDetector::detectFaces(const Mat& frame) {
     Mat frameGray;
     cvtColor(frame, frameGray, COLOR_BGR2GRAY);
     equalizeHist(frameGray, frameGray);
