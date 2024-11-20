@@ -8,13 +8,12 @@
 ```bash
 brew install opencv
 ```
-2. Set the correct paths for the training data inside of the main.cpp file in the main() method (line 101)
-
-Make sure the paths below match your local version for the training data you can use the training data in this directory inside of the data folder
-OR you can also use the training data that comes automatically as part of the opencv installation
-below are the paths from the opencv library, make sure they actually match what is on your computer
-if you can't find the ones that come with opencv, just set the paths for the data folder in this rep
-for example: /path/to/project/data/haarcascades/haarcascade_frontalface_alt.xml
+2. Set the correct paths for the training data inside of the main.cpp file in the main() method (line 101). 
+- Make sure the paths there match your local version for the training data. 
+- You can use the training data in this directory inside of the data folder 
+- OR you can also use the training data that comes automatically as part of the opencv installation 
+- in the main.cpp file are the paths from the opencv library, make sure they actually match what is on your computer if you can't find the ones that come with opencv, just set the paths for the data folder in this rep 
+- for example: /path/to/project/data/haarcascades/haarcascade_frontalface_alt.xml
 
 # Run the program
 I recommend using an IDE like CLion or Visual Studio Code to automatically build and run your C++ code, it's much easier that way. You should be able to click
