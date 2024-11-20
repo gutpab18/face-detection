@@ -99,10 +99,16 @@ void FaceDetector::displayEyes(Mat frame, const std::vector<Rect>& eyes, const R
 }
 
 int main(int argc, const char **argv) {
+    //Make sure the paths below match your local version for the training data
+    //you can use the training data in this directory inside of the data folder
+    //OR you can also use the training data that comes automatically as part of the opencv installation
+    //below are the paths from the opencv library, make sure they actually match what is on your computer
+    //if you can't find the ones that come with opencv, just set the paths for the data folder in this rep
+    //for example: /path/to/project/data/haarcascades/haarcascade_frontalface_alt.xml
     CommandLineParser parser(argc, argv,
                              "{help h||}"
-                             "{face_cascade|/usr/local/Cellar/opencv/4.8.1_5/share/opencv4/haarcascades/haarcascade_frontalface_alt.xml|Path to face cascade.}"
-                             "{eyes_cascade|/usr/local/Cellar/opencv/4.8.1_5/share/opencv4/haarcascades/haarcascade_eye_tree_eyeglasses.xml|Path to eyes cascade.}"
+                             "{face_cascade|/usr/local/Cellar/opencv/4.9.0_2/share/opencv4/haarcascades/haarcascade_frontalface_alt.xml|Path to face cascade.}"
+                             "{eyes_cascade|/usr/local/Cellar/opencv/4.9.0_2/share/opencv4/haarcascades/haarcascade_eye_tree_eyeglasses.xml|Path to eyes cascade.}"
                              "{camera|0|Camera device number.}");
 
     parser.about(
